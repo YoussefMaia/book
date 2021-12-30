@@ -10,15 +10,15 @@ const services = require('./routes/service')
 const account  = require('./routes/account')
 const booking  = require('./routes/booking')
 const login  = require('./routes/login')
-app.use(cors({
-    origin: [
-        "http://localhost:3000", 
-        "http://localhost:3001", 
-        "http://localhost:3003"
-    ],
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-}))
+// app.use(cors({
+//     origin: [
+//         "http://localhost:3000", 
+//         "http://localhost:3001", 
+//         "http://localhost:3003"
+//     ],
+//     methods: ["GET", "POST", "PUT", "DELETE"],
+//     credentials: true,
+// }))
 
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended: true}))
